@@ -1,18 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Fade from 'react-reveal/Fade' ;
 
-class ComponentName extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+const Footer = (props) => {
+    return (
+        <footer className="bck_red">
+            <Fade delay={500}>
+                <div className="font_righteous footer_log_venue">
+                    The Venue
+                    <div className="footer_copyright">
+                        The Venue 2018. All rights reserved
+                    </div>
+                </div>
+            </Fade>
+        </footer>
+    );
+};
 
-    render() {
-        return (
-            <div></div>
-        );
-    }
-}
-
-
-export default ComponentName;
+export default Footer;
